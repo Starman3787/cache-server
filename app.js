@@ -9,7 +9,7 @@ const cache = new NodeCache({ stdTTL: 60 * 5, checkperiod: 60 });
 
 app.use(bodyParser.json());
 
-app.get("/:?", (req, res) => {
+app.get("/:0?/:1?/:2?/:3?/:4?", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     const cached = cache.get(req.url);
     if (cached) {
@@ -21,7 +21,7 @@ app.get("/:?", (req, res) => {
     }
 });
 
-app.post("/:?", (req, res) => {
+app.post("/:0?/:1?/:2?/:3?/:4?", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     if (!req.body) {
         res.status(304);
