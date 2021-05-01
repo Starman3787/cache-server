@@ -14,7 +14,7 @@ app.get("/:?", (req, res) => {
     const cached = cache.get(req.url);
     if (cached) {
         res.status(200);
-        res.send(cached);
+        res.send(JSON.stringify(cached));
     } else {
         res.status(404);
         res.end();
