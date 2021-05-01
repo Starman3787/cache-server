@@ -1,13 +1,13 @@
 {
   "name": "cache-server",
   "version": "1.0.0",
-  "description": "Very simple caching server",
+  "description": "Dead simple caching server",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Starman",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
